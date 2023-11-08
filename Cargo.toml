@@ -1,0 +1,18 @@
+[package]
+name = "retryable-error"
+version = "0.1.0"
+edition = "2021"
+authors = ["Travis Brown <travisrobertbrown@gmail.com>"]
+homepage = "https://github.com/travisbrown/retryable-error"
+repository = "https://github.com/travisbrown/retryable-error"
+description = "Helpers for retrying errors"
+license-file = "LICENSE"
+readme = "README.md"
+
+[dependencies]
+log = "0.4"
+tryhard = "0.5"
+
+[dev-dependencies]
+thiserror = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
